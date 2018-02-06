@@ -45,4 +45,20 @@ void main(void){
 	}
 }
 
-
+void capacitive_touch(){ //test capacitive touch
+	DDRC&=0b00000000; //making sure pins are inputs
+	DDRC|=0b00000001; //set LSB output
+	PORTC|=0b00000001; //set output high
+	
+	//maybe set all pins to input, and using 5v port to feed the capacitive sensing circuit
+	
+	if(PINC==0b00000001){ //one of the inputs turned from 1 to 0
+		//do something
+		/*
+		*  midi.send_data(CHANNEL,C,VELOCITY);
+		*
+		*/
+	}
+	
+	
+}
