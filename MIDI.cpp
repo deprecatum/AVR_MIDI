@@ -2,7 +2,7 @@
  * MIDI.cpp
  *
  *  Created on: 23/01/2018
- *      Author: deeper
+ *      Author: depre
  */
 
 
